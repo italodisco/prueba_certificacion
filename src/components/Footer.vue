@@ -6,7 +6,7 @@
       <v-card
         flat
         tile
-        class="green lighten-1 white--text text-center"
+        class="deep-orange lighten-1 white--text text-center"
       >
         <v-card-text>
           <v-btn
@@ -21,9 +21,9 @@
           </v-btn>
         </v-card-text>
   
-        <v-card-text class="white--text pt-0">
+        <v-card-text class="white--text pt-0 font-weight-bold">
           Queremos darte la bienvenida a nuestro sitio, donde encontrarás todo lo que buscas en artículos electrónicos, joyería, ropa de hombre y ropa de mujer. Nuestros productos provienen de tiendas de todas partes del mundo y nos hemos preocupado por cumplir los máximos estándares de calidad. Si tienes alguna pregunta o no puedes encontrar ese producto que tanto necesitas, no dudes en contactarte con nuestro equipo de soporte. 
-        </v-card-text>
+     </v-card-text>
   
         <v-divider></v-divider>
   

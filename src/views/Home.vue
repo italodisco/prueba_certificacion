@@ -1,10 +1,12 @@
 <template>
     <v-container>
-      <h1 class="display-2 text-center mb-4 green--text font-weight-bold">
-      Tienda DeTodito
+      <h1 class="display-2 text-center mb-4 indigo--text font-weight-bold">
+      En DeTodito está todo lo que necesito
       </h1>
       <v-divider></v-divider>
-      <v-row justify="space-around" align="center" class="iconBox">
+      <carrusel></carrusel>
+      <CardHome></CardHome>
+      <!-- <v-row justify="space-around" align="center" class="iconBox">
         <v-col class="d-flex justify-center">
           <v-card class="pa-5">
             <v-icon size="200" color="light-green"
@@ -21,11 +23,13 @@
             <v-icon size="200" color="light-green">mdi-cart-plus</v-icon>
           </v-card>
         </v-col>
-      </v-row>
+      </v-row> -->
     </v-container>
   </template>
   
   <script>
+  import Carrusel from '@/components/Carrusel.vue'
+  import CardHome from '@/components/CardHome.vue'
   export default {
     name: "home-view",
     // props: {},
@@ -35,7 +39,10 @@
     // computed: {},
     //methods: {}
     // watch: {},
-    // components: {},
+  components: {
+    Carrusel,
+   CardHome
+  },
     // mixins: [],
     // filters: {},
     // -- Lifecycle Methods

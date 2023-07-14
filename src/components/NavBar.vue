@@ -1,12 +1,12 @@
 <template>
 <div>
     <v-app-bar
-      color="deep-purple"
+      color="deep-orange lighten-1"
       dark
     >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="font-weight-bold">Vinos Comercio</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold">Home DeTodito</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
 
