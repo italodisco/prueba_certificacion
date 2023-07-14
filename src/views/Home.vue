@@ -1,7 +1,7 @@
 <template>
     <v-container>
       <h1 class="display-2 text-center mb-4 green--text font-weight-bold">
-        Vinos Ofertas
+      Tienda DeTodito
       </h1>
       <v-divider></v-divider>
       <v-row justify="space-around" align="center" class="iconBox">
