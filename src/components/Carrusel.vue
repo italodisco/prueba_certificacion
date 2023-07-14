@@ -4,16 +4,12 @@
     <v-carousel-item
       v-for="mejorproducto in mejoresproductos"
       :key="mejorproducto.title"
-      height="100px"
-      width="300px"
+      height="200px"
+      width="600px"
       class="mx-auto"
       :src="mejorproducto.image"
     >
-      <v-row class="fill-height" align="center" justify="center">
-        <div class="text-h6 mt-4">
-          {{ mejorproducto.title }}
-        </div>
-      </v-row>
+      <v-row class="fill-height" align="center" justify="center"> </v-row>
     </v-carousel-item>
   </v-carousel>
 </template>

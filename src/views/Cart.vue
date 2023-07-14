@@ -8,10 +8,10 @@
           border="left"
           prominent
           shaped
-          color="light-green"
+          color="indigo"
           type="info"
         >
-          No hay productos agregados al carrito
+          Bolsa de Compras sin productos
         </v-alert>
         <!-- v-alert que aparece solo si la cantidad de productos en carro es igual a cero -->
 

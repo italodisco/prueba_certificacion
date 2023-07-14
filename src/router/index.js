@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
-import NotFound from  '@/views/NotFound.vue'
+import NotFound from '@/views/NotFound.vue'
 import VestuarioHombre from '@/views/VestuarioHombre.vue'
 import VestuarioMujer from '@/views/VestuarioMujer.vue'
 import Electrónica from '@/views/Electrónica.vue'
@@ -38,7 +38,7 @@ const routes = [
   {
     path: '*',
     component: NotFound
-    }
+  }
 ]
 
 const router = new VueRouter({

@@ -41,7 +41,7 @@ export default {
       drawer: false,
       group: null,
       routes: [
-        // Acá están los íconos e información de cada vista desde Navbar
+        // Acá ubiqué los íconos e información de cada vista desde Navbar
         {
           icon: "mdi-home",
           title: "Inicio",

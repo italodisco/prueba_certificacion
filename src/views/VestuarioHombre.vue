@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       showSnackbar: false,
-      snackbarTimeout: 3000, 
+      snackbarTimeout: 3000,
     };
   },
   computed: {

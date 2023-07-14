@@ -17,11 +17,9 @@ export default new Vuex.Store({
       return state.cart.map(prod => {
         let myProd = prod
         myProd.total = prod.count * prod.price
-        // Lo de arriba es para calcular el total
         return myProd
       })
     },
-    // Getters agregados según comentario en cuaderno
     cartCount(state) {
       return state.cart.length
     },
