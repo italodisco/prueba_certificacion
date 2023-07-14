@@ -32,7 +32,7 @@
 </template>
 
 <script>
-// import {mapGetters} from 'vuex'
+import { mapGetters } from "vuex";
 export default {
   name: "nav-bar",
   // props: {},
@@ -62,10 +62,16 @@ export default {
           title: "Electrónica",
           name: "Electrónica",
         },
+        {
+          icon: "mdi-cart",
+          title: "Bolsa de compras",
+          name: "Cart",
+        },
       ],
     };
   },
   computed: {
+    ...mapGetters(["cartCount"]),
     currentRoute() {
       return this.$route.name;
     },

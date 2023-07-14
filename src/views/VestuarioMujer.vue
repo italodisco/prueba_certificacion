@@ -13,7 +13,6 @@
         :key="producto.id"
       >
         <v-card class="mx-auto" max-width="400" height="700">
-          <!-- Contenido de la tarjeta -->
           <v-img
             class="white--text align-end"
             height="250px"
@@ -25,14 +24,21 @@
             <div class="product-info">
               <p class="product-property">{{ producto.description }}</p>
               <p class="product-property">{{ producto.price }}</p>
-              <v-btn color="primary" @click="addToCart(producto)">
-                Agregar
-              </v-btn>
+              <v-btn color="primary" @click="add(producto)"> Agregar </v-btn>
             </div>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
+
+    <v-snackbar
+      v-model="showSnackbar"
+      :timeout="snackbarTimeout"
+      multi-line
+      vertical
+    >
+      Producto agregado a la Bolsa de Compras
+    </v-snackbar>
   </v-container>
 </template>
   
@@ -41,11 +47,27 @@ import { mapActions, mapState } from "vuex";
 
 export default {
   name: "VestuarioMujer",
+  data() {
+    return {
+      showSnackbar: false,
+      snackbarTimeout: 3000,
+    };
+  },
   computed: {
     ...mapState(["ropamujer"]),
   },
   methods: {
-    ...mapActions(["fetchropaMujer", "addToCart"]),
+    ...mapActions(["fetchropaMujer", "addProductCart"]),
+    add(ropaMujer) {
+      let prod = {
+        id: ropaMujer.id,
+        title: ropaMujer.title,
+        price: ropaMujer.price,
+        count: 1,
+      };
+      this.addProductCart(prod);
+      this.showSnackbar = true;
+    },
   },
   created() {
     this.fetchropaMujer();

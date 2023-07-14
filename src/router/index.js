@@ -5,7 +5,7 @@ import NotFound from  '@/views/NotFound.vue'
 import VestuarioHombre from '@/views/VestuarioHombre.vue'
 import VestuarioMujer from '@/views/VestuarioMujer.vue'
 import Electrónica from '@/views/Electrónica.vue'
-
+import Cart from '@/views/Cart.vue'
 
 Vue.use(VueRouter)
 
@@ -30,7 +30,11 @@ const routes = [
     name: 'Electrónica',
     component: Electrónica
   },
-
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  },
   {
     path: '*',
     component: NotFound

@@ -24,14 +24,21 @@
             <div class="product-info">
               <p class="product-property">{{ ropaHombre.description }}</p>
               <p class="product-property">{{ ropaHombre.price }}</p>
-              <v-btn color="primary" @click="addToCart(ropaHombre)">
-                Agregar
-              </v-btn>
+              <v-btn color="primary" @click="add(ropaHombre)"> Agregar </v-btn>
             </div>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
+
+    <v-snackbar
+      v-model="showSnackbar"
+      :timeout="snackbarTimeout"
+      multi-line
+      vertical
+    >
+      Producto agregado a la bolsa de compras
+    </v-snackbar>
   </v-container>
 </template>
   
@@ -40,11 +47,27 @@ import { mapActions, mapState } from "vuex";
 
 export default {
   name: "VestuarioHombre",
+  data() {
+    return {
+      showSnackbar: false,
+      snackbarTimeout: 3000, 
+    };
+  },
   computed: {
     ...mapState(["ropahombre"]),
   },
   methods: {
-    ...mapActions(["fetchropaHombre", "addToCart"]),
+    ...mapActions(["fetchropaHombre", "addProductCart"]),
+    add(ropaHombre) {
+      let prod = {
+        id: ropaHombre.id,
+        title: ropaHombre.title,
+        price: ropaHombre.price,
+        count: 1,
+      };
+      this.addProductCart(prod);
+      this.showSnackbar = true;
+    },
   },
   created() {
     this.fetchropaHombre();

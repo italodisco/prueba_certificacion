@@ -10,7 +10,7 @@
               </div>
               <div class="paragraph-text mt-2">
                 <br />
-                <br />Intenta volver al <router-link to="/">home page</router-link> y reanuda tu búsqueda o contáctate con soporte. 
+                <br />Intenta volver al <router-link to="/">home page</router-link> y reanuda tu búsqueda. 
                
              
               </div>

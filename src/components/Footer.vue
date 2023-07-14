@@ -22,7 +22,8 @@
         </v-card-text>
   
         <v-card-text class="white--text pt-0 font-weight-bold">
-          Queremos darte la bienvenida a nuestro sitio, donde encontrarás todo lo que buscas en artículos electrónicos, joyería, ropa de hombre y ropa de mujer. Nuestros productos provienen de tiendas de todas partes del mundo y nos hemos preocupado por cumplir los máximos estándares de calidad. Si tienes alguna pregunta o no puedes encontrar ese producto que tanto necesitas, no dudes en contactarte con nuestro equipo de soporte. 
+          Bienvenido a DeTodito, tu tienda de moda y tecnología. Descubre lo último en ropa masculina, femenina y productos tecnológicos. 
+          Encuentra estilos modernos, tendencias de moda y dispositivos de vanguardia. Disfruta de una experiencia de compra segura y conveniente. ¡Gracias por elegir DeTodito, tu destino de moda y tecnología!
      </v-card-text>
   
         <v-divider></v-divider>
