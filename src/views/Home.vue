@@ -6,24 +6,6 @@
       <v-divider></v-divider>
       <carrusel></carrusel>
       <CardHome></CardHome>
-      <!-- <v-row justify="space-around" align="center" class="iconBox">
-        <v-col class="d-flex justify-center">
-          <v-card class="pa-5">
-            <v-icon size="200" color="light-green"
-              >mdi-card-search-outline</v-icon>
-          </v-card>
-        </v-col>
-        <v-col class="d-flex justify-center">
-          <v-card class="pa-5">
-            <v-icon size="200" color="light-green">mdi-emoticon-excited</v-icon>
-          </v-card>
-        </v-col>
-        <v-col class="d-flex justify-center">
-          <v-card class="pa-5">
-            <v-icon size="200" color="light-green">mdi-cart-plus</v-icon>
-          </v-card>
-        </v-col>
-      </v-row> -->
     </v-container>
   </template>
   
